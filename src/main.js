@@ -6,15 +6,15 @@ export default new Phaser.Game({
 	type: Phaser.AUTO,
 
 	physics: {
-		default: "matter",
-		matter: {
-			gravity: { y: 1, x: 0 },
-			debug: true,
+		default: "arcade",
+		arcade: {
+			gravity: { y: 400, x: 0 },
+			// debug: true,
 		},
 	},
 	scale: {
 		mode: Phaser.Scale.FIT,
 		autoCenter: Phaser.Scale.CENTER_BOTH,
 	},
-	scene: [ HomeScene, GameScene],
+	scene: [GameScene, HomeScene],
 });
